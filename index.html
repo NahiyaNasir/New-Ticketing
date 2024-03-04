@@ -340,7 +340,7 @@
                     <div id="hide-coupon" class="relative mb-6">
                         <input id="input-coupon" class="py-5 pl-[22px] rounded-xl w-full placeholder:text-sm"
                             type="text" placeholder="Have any coupon?">
-                        <button id="apply"  
+                        <button id="apply"   
                             class="absolute right-2 top-2 btn font-semibold text-white bg-[#1DD100]">Apply</button>
                     </div>
                     <!-- grand total  -->
@@ -364,7 +364,7 @@
                             placeholder="Enter your email id">
                     </div>
                     <div class="mb-6 mt-2">
-                    <!--  -->    <button id="next" onclick="nextChanged()"
+        <!--  --<button id="next" onclick="nextChanged()"
                           class="w-full p-0 btn bg-[#1DD100] font-extrabold text-xl text-white">
                             <a class="w-full h-full py-2" href="">
                                 Next
@@ -374,11 +374,34 @@
 
 
                   </div>
-                    <div class="flex justify-evenly text-[rgba(3,7,18,0.6)]">
-                        <a class="link" href="">Terms and Conditions</a>
-                        <a class="link" href="">Cancellation Policy</a>
-                    </div>
+                   -->
+
+                    
                 </form>
+                <!-- The button to open modal -->
+
+<label for="my_modal_6" class="btn w-full bg-orange-600">Next</label>
+
+
+<input type="checkbox" id="my_modal_6" class="modal-toggle" />
+<div class="modal" role="dialog">
+  <div class="modal-box">
+    <div class="flex items-center justify-center">
+    <img src="/images/success.png" alt="" srcset="" ></div>
+    <h3 class="font-bold text-lg text-center">Succsess!</h3>
+    <p class="py-4">Thank you for Booking Our Bus Seats. 
+      We are working hard to find the best service and deals for you. 
+      Shortly you will find a confirmation in your email.</p>
+    <div class="modal-action">
+      <label for="my_modal_6" class="btn w-full bg-green-700">Close!</label>
+    </div>
+  </div>
+</div>
+   </div> <!-- main flex -->
+   <div class="flex justify-evenly text-[rgba(3,7,18,0.6)]">
+    <a class="link" href="">Terms and Conditions</a>
+    <a class="link" href="">Cancellation Policy</a>
+</div>
                 </section>
                 </main>
 

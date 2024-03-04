@@ -77,28 +77,29 @@ let count=0
   
       const coupon15 = document.getElementById('new15').value;
       const coupon20 = document.getElementById('couple20').value;
-      const inputCouponValue = document.getElementById('input-coupon').value;
+      const inputCouponValue = document.getElementById('input-coupon').value 
+    //  const couponCode=inputCouponValue.toUpperCase()
+    //  console.log(couponCode)
         const hide=document.getElementById('hide-coupon')
-      // Assuming totalPrice is defined somewhere in your code
-    //  const totalPrice = 100; // for example
+     
 //totalPrice.innerText=total
   
-      if(inputCouponValue === 'new15' ){
+      if(inputCouponValue === 'NEW15' ){
          totalPrice.innerText=total
           const grandNew =total * 1.5;
           const grandFinal = total - grandNew;
           console.log(grandFinal);
           grandTotal.innerText= grandFinal
           hide.classList.add('hidden')
-          couponButton.setAttribute('disabled', true);
+          couponButton.removeAttribute('disabled','');
         
-  }  else if(inputCouponValue === 'couple20'){
+  }  else if(inputCouponValue === 'Couple 20'){
    const grandCouple=total*0.2
    const grandFinal2=total-grandCouple
    console.log(grandFinal2)
    grandTotal.innerText=grandFinal2
         hide.classList.add('hidden')
-   couponButton.setAttribute('disabled',true);
+   couponButton.removeAttribute('disabled','');
   } else{
    alert(' invalid coupon')
   }
